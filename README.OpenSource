@@ -1,0 +1,11 @@
+[
+  {
+    "Name": "io-lifetimes",
+    "License": "Apache-2.0_WITH_LLVM-exception, Apache License 2.0, MIT",
+    "License File": "LICENSE-Apache-2.0_WITH_LLVM-exception, LICENSE-MIT",
+    "Version Number": "1.0.5",
+    "Owner": "fangting12@huawei.com",
+    "Upstream URL": "https://github.com/sunfishcode/io-lifetimes",
+    "Description": "A Rust library that provides support for lifetime annotations in IO operations."
+  }
+]
