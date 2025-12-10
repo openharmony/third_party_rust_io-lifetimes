@@ -24,7 +24,7 @@ ohos_cargo_crate("lib") {
   cargo_pkg_authors = "Dan Gohman <dev@sunfishcode.online>"
   cargo_pkg_name = "io-lifetimes"
   cargo_pkg_description = "A low-level I/O ownership and borrowing library"
-  deps = [ "//third_party/rust/crates/libc:lib" ]
+  external_deps = [ "rust_libc:lib" ]
   features = [
     "close",
     "libc",
@@ -33,4 +33,7 @@ ohos_cargo_crate("lib") {
   build_root = "build.rs"
   build_sources = [ "build.rs" ]
   build_script_outputs = [ "librust_out.rmeta" ]
+  module_output_extension = ".rlib"
+  part_name = "rust_io_lifetimes"
+  subsystem_name = "thirdparty"
 }

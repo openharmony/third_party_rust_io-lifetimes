@@ -1,0 +1,36 @@
+{
+  "name": "@ohos/rust_io_lifetimes",
+  "description": "A Rust library that provides support for lifetime annotations in IO operations",
+  "version": "6.1",
+  "license": "Apache License 2.0",
+  "publishAs": "code-segment",
+  "segment": {
+    "destPath": "third_party/rust/crates/io-lifetimes"
+  },
+  "dirs": {},
+  "scripts": {},
+  "readmePath": {
+    "en": "README.md"
+  },
+  "component": {
+    "name": "rust_io_lifetimes",
+    "subsystem": "thirdparty",
+    "adapted_system_type": [
+      "standard"
+    ],
+    "deps": {
+      "components": [
+        "rust_libc"
+      ]
+    },
+    "build": {
+      "sub_component": [],
+      "inner_kits": [
+        {
+          "name": "//third_party/rust/crates/io-lifetimes:lib"
+        }
+      ],
+      "test": []
+    }
+  }
+}
